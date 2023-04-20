@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beni Tanıyın!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="heading-1">YOUR_NAME</h1>
+        <nav class="header-nav">
+            <ul>
+                <li>
+                    <a href="#aboutme">Hakkımda</a>
+                </li>
+                <li>
+                    <a href="#articles">Makaleler</a>
+                </li>
+                <li>
+                    <a href="#abilities">Becerilerim</a>
+                </li>
+                <li>
+                    <a href="#contact">İletişim</a>
+                </li>
+            </ul>
+        </nav>
+        <label class="hamburger-menu">
+            <input type="checkbox" />
+        </label>
+        <div class="mobile-menu">
+            <ul>
+                <li>
+                    <a href="#aboutme">Hakkımda</a>
+                </li>
+                <li>
+                    <a href="#articles">Makaleler</a>
+                </li>
+                <li>
+                    <a href="#abilities">Becerilerim</a>
+                </li>
+                <li>
+                    <a href="#contact">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="aboutme">
+            <h2 class="heading-2 heading-main">Merhaba, benim adım YOUR_NAME.</h2>
+            <div class="image-box">
+                <img src="./public/default.jpeg" />
+            </div>
+            <p>Ben Başkent Üniversitesinde Bilgisayar Mühendisliği öğrencisiyim. Web Programlama öğreniyorum ve şuanda
+                HTML ve CSS ile ilk websitemi geliştiriyorum. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolor provident exercitationem nulla, quam praesentium nesciunt iste? Sint nobis, dolore eos nam a
+                asperiores et, nesciunt repellat dolorem perspiciatis itaque reprehenderit.</p>
+        </section>
+
+        <section id="articles">
+            <h2 class="heading-2">Blog Yazılarım</h2>
+            <article class="article">
+                <h3 class="heading-3">HTML Nedir?</h3>
+                <p>HTML, HyperText Markup Language olarak da bilinir. HTML, web sayfalarının yapısını ve görünümünü
+                    belirlemek için kullanılan bir etiket dilidir.
+                </p>
+                <span>Yazar: YOUR_NAME 17/01/2023</span>
+                <button class="btn-article">Devamını Oku</button>
+
+            </article>
+
+            <article class="article">
+                <h3 class="heading-3">CSS Nedir?</h3>
+                <p>
+                    CSS, Cascading Style Sheets olarak da bilinir. CSS, HTML sayfalarının görünümünü ve düzenini
+                    belirlemek için kullanılan bir stil dilidir.
+                </p>
+                <span>Yazar: YOUR_NAME 17/01/2023</span>
+                <button class="btn-article">Devamını Oku</button>
+            </article>
+        </section>
+
+        <section id="abilities">
+            <h2 class="heading-2">Becerilerim</h2>
+            <ul>
+                <li>
+                    <span>HTML</span>
+                    <progress id="html" value="85" max="100"> 85% </progress>
+                </li>
+                <li>
+                    <span>CSS</span>
+                    <progress id="css" value="75" max="100"> 75% </progress>
+                </li>
+                <li>
+                    <span>JavaScript</span>
+                    <progress id="js" value="78" max="100"> 78% </progress>
+                </li>
+                <li>
+                    <span>PHP</span>
+                    <progress id="php" value="65" max="100"> 65% </progress>
+                </li>
+                <li>
+                    <span>MySQL</span>
+                    <progress id="mysql" value="55" max="100"> 55% </progress>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 class="heading-2">İletişim</h2>
+            <form action="#">
+                <div class="contact-left">
+                    <label for="name">Adınız</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="contact-right">
+                    <label for="email">E-posta Adresiniz</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="contact-textarea">
+                    <label for="message">Mesajınız</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <button class="btn-submit" type="submit">Gönder</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>YOUR_NAME tarafından geliştirilmiştir. © 2023 Tüm hakları saklıdır. Beni <a href="#">GitHub</a>'da takip et!
+        </p>
+    </footer>
+</body>
+
+</html>
